@@ -6,6 +6,33 @@ class Projects extends Component {
     super(props);
     this.state = { activeTab: 0 };
   }
+  toggleCategories() {
+    if (this.state.activeTab === 0) {
+      return(
+        <div>
+          <h1>This is Project 1</h1>
+        </div>
+    )
+  } else if(this.state.activeTab === 1) {
+    return (
+      <div>
+        <h1>This is Project 2</h1>
+      </div>
+    )
+  } else if (this.state.activeTab === 2) {
+    return (
+      <div>
+        <h1>This is Homework 1</h1>
+      </div>
+    )
+} else if(this.state.activeTab === 3) {
+  return (
+    <div>
+      <h1>This is Homework 2</h1>
+    </div>
+  )
+}
+
 render() {
   return (
     <div className="category-tab">
@@ -15,6 +42,9 @@ render() {
       <Tab>Homework 1</Tab>
       <Tab>Homework 2</Tab>
       </Tabs>
+      <section className="projects-grid">
+        {this.toggleCategories()}
+      </section>
     </div>
   )
 }
