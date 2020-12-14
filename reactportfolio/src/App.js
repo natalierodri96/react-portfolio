@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div style={{height: '300px', position: 'relative'}}>
+    <div className="flower" style={{height: '500px', position: 'relative'}}>
     <Layout style={{background: 'url(https://wallpapersdsc.net/wp-content/uploads/2016/09/Orange-Flower-Wallpapers-HD.jpg) center / cover'}}>
         <Header transparent title="Title" style={{color: 'white'}}>
             <Navigation>

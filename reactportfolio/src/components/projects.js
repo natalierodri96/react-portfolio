@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-
+import { Tabs, Tab } from 'react-mdl';
 
 class Projects extends Component {
   constructor(props) {
@@ -10,7 +10,10 @@ render() {
   return (
     <div className="category-tab">
       <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
-
+      <Tab>Project 1</Tab>
+      <Tab>Project 2</Tab>
+      <Tab>Homework 1</Tab>
+      <Tab>Homework 2</Tab>
       </Tabs>
     </div>
   )
