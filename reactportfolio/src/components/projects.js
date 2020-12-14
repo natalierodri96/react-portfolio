@@ -65,4 +65,5 @@ render() {
   )
 }
 }
+}
 export default Projects; 
