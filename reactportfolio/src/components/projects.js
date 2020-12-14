@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Tabs, Tab } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class Projects extends Component {
   constructor(props) {
@@ -43,6 +43,12 @@ render() {
       <Tab>Homework 2</Tab>
       </Tabs>
       <section className="projects-grid">
+        <Grid className="projects-grid">
+          <Cell col={12}>
+  <div className="content">{this.toggleCategories()}</div>
+
+          </Cell>
+        </Grid>
         {this.toggleCategories()}
       </section>
     </div>
