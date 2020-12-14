@@ -11,14 +11,14 @@ class Projects extends Component {
       return(
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url() center / cover'}}>Project 1</CardTitle>
-        <CardText></CardText>
+        <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </CardText>
         <CardActions border>
         <Button colored>GitHub</Button>
         <Button colored>GitHub</Button>
         <Button colored>GitHub</Button>
         </CardActions>
         <CardMenu>
-          
+
         </CardMenu>
         </Card>
     )
