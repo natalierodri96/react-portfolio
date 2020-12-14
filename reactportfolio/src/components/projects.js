@@ -17,7 +17,8 @@ class Projects extends Component {
         <Button colored>GitHub</Button>
         <Button colored>GitHub</Button>
         </CardActions>
-        <CardMenu>
+        <CardMenu style={{color: '#fff'}}>
+          <IconButton name="share"/>
 
         </CardMenu>
         </Card>
